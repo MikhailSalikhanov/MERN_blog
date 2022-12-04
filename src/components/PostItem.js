@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiFillEye, AiOutlineMessage, AiTwotoneEdit, AiFillDelete } from 'react-icons/ai'
-import Moment from 'react-moment'
+// import Moment from 'react-moment'
 import { Link, useNavigate } from 'react-router-dom'
 import { removePost } from '../redux/features/posts/postSlice'
 import { useDispatch, useSelector } from 'react-redux'
@@ -30,7 +30,7 @@ export const PostItem = ({ post, id }) => {
 
                 <div className='post_icon_wrapper'>
                     <div className='post_item_info'>Author: {post.username} </div>
-                    <div className='post_item_info'>Published: <Moment date={post.createdAt} format='D MMM YYYY' /></div>
+                    {/* <div className='post_item_info'>Published: <Moment date={post.createdAt} format='D MMM YYYY' /></div> */}
                 </div>
                 <div className='post_item_title'>{post.title}</div>
 

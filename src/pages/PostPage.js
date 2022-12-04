@@ -9,7 +9,7 @@ import {
     AiTwotoneEdit,
     AiFillDelete,
 } from 'react-icons/ai'
-import Moment from 'react-moment'
+// import Moment from 'react-moment'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
@@ -102,7 +102,7 @@ export const PostPage = () => {
                 <div className='post-wrapper-post'>
                       <div className='post_icon_wrapper'>
                           <div className='post_item_info'>Author: {post.username} </div>
-                          <div className='post_item_info'>Published: <Moment date={post.createdAt} format='D MMM YYYY' /></div>
+                          {/* <div className='post_item_info'>Published: <Moment date={post.createdAt} format='D MMM YYYY' /></div> */}
                       </div>
 
                       <div className='post_item_title'>{post.title}</div>
