@@ -30,13 +30,13 @@ export const PostItem = ({ post, id }) => {
 
                 <div className='post_icon_wrapper'>
                     <div className='post_item_info'>Author: {post.username} </div>
-                    {/* <div className='post_item_info'>Published: <Moment date={post.createdAt} format='D MMM YYYY' /></div> */}
+                    <div className='post_item_info'>Published: <Moment date={post.createdAt} format='D MMM YYYY' /></div>
                 </div>
                 <div className='post_item_title'>{post.title}</div>
 
                 <div className='post_item_image_and_text_wrapper'>
                     <div className={post.imgUrl ? 'post_item_image' : 'hidden'}>
-                        {post.imgUrl && (<img alt='img' className='post_item_image_inside' src={`http://localhost:5000/${post.imgUrl}`}/>)}
+                        {post.imgUrl && (<img alt='img' className='post_item_image_inside' src={`https://mern-blog-backend-api.onrender.com/${post.imgUrl}`}/>)}
                     </div>
                     <div className='post_item_text line-clamp'>{post.text}</div>
                 </div>

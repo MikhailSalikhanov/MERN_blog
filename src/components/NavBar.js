@@ -12,7 +12,7 @@ export const NavBar = () => {
     let avatar = '?'
     if (isAuth) {
       avatar = user.avatarUrl 
-        ? (<img alt='img' className='avatar_image' src={`http://localhost:5000/${user.avatarUrl}`}/>)
+        ? (<img alt='img' className='avatar_image' src={`https://mern-blog-backend-api.onrender.com/${user.avatarUrl}`}/>)
         : user.username.trim().toUpperCase().split('').slice(0, 2)
     }    
     

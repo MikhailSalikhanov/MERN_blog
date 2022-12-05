@@ -55,7 +55,7 @@ export const ProfilePage = () => {
             <div className='profile_info_item'>Your name (login): {username}</div>
             <div className='profile_info_item'>Your photo (avatar):</div>
             <div className='avatar_profile'>
-                    {user?.avatarUrl ? <img alt='img' className='avatar_image' src={`http://localhost:5000/${user?.avatarUrl}`}/> : <div>{user.username.trim().toUpperCase().split('').slice(0, 2)}</div>}
+                    {user?.avatarUrl ? <img alt='img' className='avatar_image' src={`https://mern-blog-backend-api.onrender.com/${user?.avatarUrl}`}/> : <div>{user.username.trim().toUpperCase().split('').slice(0, 2)}</div>}
             </div>
         </div>
         <div className='form_wrapper'>
