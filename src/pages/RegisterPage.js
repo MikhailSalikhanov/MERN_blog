@@ -16,8 +16,9 @@ export const RegisterPage = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
+        if (isAuth) navigate('/')
+        
         if (!mounted.current){
-            if (isAuth) navigate('/')
             mounted.current = true
         } else{
             if (status) toast(status)
