@@ -22,7 +22,7 @@ export const RegisterPage = () => {
         } else{
             if (status) toast(status)
         }
-    }, [status, isAuth])
+    }, [status, isAuth, navigate])
 
     const handleSubmit = () => {
         try {
