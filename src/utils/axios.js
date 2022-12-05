@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-    baseURL: 'http://localhost:5000/api'
-    // baseURL: 'https://ms-mern-blog.herokuapp.com/api'
+    // baseURL: 'http://localhost:5000/api'
+    baseURL: 'https://mern-blog-backend-api.onrender.com/api'
 })
 
 instance.interceptors.request.use(config => {
