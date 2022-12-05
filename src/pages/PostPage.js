@@ -9,7 +9,7 @@ import {
     AiTwotoneEdit,
     AiFillDelete,
 } from 'react-icons/ai'
-// import Moment from 'react-moment'
+import Moment from 'react-moment'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
@@ -108,7 +108,7 @@ export const PostPage = () => {
                       <div className='post_item_title'>{post.title}</div>
                       <div className={post?.imgUrl ? 'post_item_image_big' : 'hidden'}>
                         {post?.imgUrl && (
-                          <img alt='img' className='post_item_image_inside' src={`http://localhost:5000/${post.imgUrl}`}/>)}
+                          <img alt='img' className='post_item_image_inside' src={`https://mern-blog-backend-api.onrender.com/${post.imgUrl}`}/>)}
                       </div>
                       <p className='post_item_text'>{post.text}</p>
 

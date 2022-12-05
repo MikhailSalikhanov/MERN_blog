@@ -1,6 +1,6 @@
 import React from 'react'
 import { AiFillEye, AiOutlineMessage, AiTwotoneEdit, AiFillDelete } from 'react-icons/ai'
-// import Moment from 'react-moment'
+import Moment from 'react-moment'
 import { Link, useNavigate } from 'react-router-dom'
 import { removePost } from '../redux/features/posts/postSlice'
 import { useDispatch, useSelector } from 'react-redux'
